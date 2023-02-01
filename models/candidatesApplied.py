@@ -7,4 +7,5 @@ class CandidatesApplied(db.Model):
     email = db.Column(db.String(200), nullable=False)
     job_title = db.Column(db.String(200), nullable=False)
     company_name = db.Column(db.String(200), nullable=False)
+    resume = db.Column(db.String(200), nullable=False)
     job_id = db.Column(db.Integer, db.ForeignKey("jobs.id"))

@@ -10,4 +10,4 @@ class Jobs(db.Model):
     job_experience = db.Column(db.String(200), nullable=False)
     job_status = db.Column(db.String(200), nullable=False)
     employer_id = db.Column(db.Integer, db.ForeignKey('employer.id'))
-    candidatesApplied = db.relationship('CandidatesApplied', backref='jobs')
+    # candidatesApplied = db.relationship('CandidatesApplied', backref='jobs')
